@@ -27,4 +27,5 @@ If applicable, add screenshots to help explain your problem.
 Add any other context about the problem here.
 
 **References**
-- A list of links to relevant references, including forum posts, stack overflow, etc.
+1. An enumerated list of links to relevant references, including forum posts, stack overflow, etc.
+2. If not applicable, please delete this section.
