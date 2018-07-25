@@ -4,11 +4,10 @@ about: I am a developer and I found a bug that I can describe
 
 ---
 
-**Describe the bug**
+**Description**
 A clear and concise description of what the bug is.
 
-**To Reproduce**
-Steps to reproduce the behavior:
+**Steps to reproduce the behavior**
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
