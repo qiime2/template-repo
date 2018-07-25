@@ -23,8 +23,13 @@ If applicable, add screenshots to help explain your problem.
 - OS: [e.g. macOS High Sierra]
 - QIIME 2 Release [e.g. 2018.6]
 
-**Additional context**
-Add any other context about the problem here.
+**Questions**
+1. An enumerated list with any questions about the problem here.
+2. If not applicable, please delete this section.
+
+**Comments**
+1. An enumerated list with any other context or comments about the problem here.
+2. If not applicable, please delete this section.
 
 **References**
 1. An enumerated list of links to relevant references, including forum posts, stack overflow, etc.
