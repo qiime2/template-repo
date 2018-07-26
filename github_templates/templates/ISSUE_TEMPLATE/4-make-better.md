@@ -4,7 +4,7 @@ about: I am a developer and I have an idea for an improvement to existing functi
 
 ---
 
-**Describe the improvement**
+**Improvement Description**
 A clear and concise description of what the improvement is.
 
 **Current Behavior**

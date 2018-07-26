@@ -4,7 +4,7 @@ about: I am a developer and I found a bug that I can describe
 
 ---
 
-**Description**
+**Bug Description**
 A clear and concise description of what the bug is.
 
 **Steps to reproduce the behavior**
