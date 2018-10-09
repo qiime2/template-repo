@@ -223,6 +223,6 @@
   color: 1f78b4
   description: 'It is probably in progress or about to be.'
 
-- name: weight:1|low
+- name: Hacktoberfest
   color: 542b3d
-  description: 'Hacktoberfest'
+  description: 'Good fit for the Hacktoberfest challenge'
