@@ -44,3 +44,5 @@ if [ $package_name ]; then
 fi
 
 commit_changes "$destination_dir" "$commit_msg"
+
+# I don't feel like pressing a bunch of buttons on busywork, triggering via src
