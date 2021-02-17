@@ -36,7 +36,7 @@ prep_dest "$destination_repo" "$local_branch" "$destination_dir"
 cp -r ./$templates_dir/* $destination_dir
 if [ $package_name ]; then
   workflows_dir="$destination_dir/workflows"
-  mkdir $workflows_dir
+  mkdir -p $workflows_dir
   sed -e "s;%PACKAGE_NAME%;$package_name;g" \
       -e "s;%ADDITIONAL_TESTS%;$additional_tests;g" \
       ./ci.yml.tmpl \
