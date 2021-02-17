@@ -10,18 +10,17 @@ set -e -x
 if [ $# -eq 0 ] || [ $# -gt 2 ];
   then
     cat <<EOF
-Usage: $0 \$LOCAL_REPO \$REMOTE
+Usage: $0 \$LOCAL_REPO \$BRANCH
 
 \$LOCAL_REPO      path to local repo
-\$REMOTE          alias for desired remote to push to (defined in \$LOCAL_REPO)
+\$BRANCH          branch to work with
 EOF
 exit 0
 fi
 
 # args & vars
 destination_repo=$1
-remote=$2
-local_branch="master"
+local_branch=$2
 commit_msg="MAINT: Updating copyright year"
 
 # actions
@@ -31,7 +30,3 @@ cd $destination_repo
 q2lint --update-copyright-year
 cd -
 commit_changes "$destination_repo" "$commit_msg"
-
-if [ $remote ]; then
-  push_changes "$destination_repo" "$remote" "$local_branch"
-fi

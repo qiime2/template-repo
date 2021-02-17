@@ -10,12 +10,12 @@ set -e -x
 if [ $# -eq 0 ] || [ $# -gt 4 ];
   then
     cat <<EOF
-Usage: $0 \$LOCAL_REPO \$PACKAGE_NAME \$ADDITIONAL_TESTS \$REMOTE
+Usage: $0 \$LOCAL_REPO \$PACKAGE_NAME \$ADDITIONAL_TESTS \$BRANCH
 
 \$LOCAL_REPO          path to local repo
 \$PACKAGE_NAME        name to assign to conda package
 \$ADDITIONAL_TESTS    additional tests to pass to ci.yml
-\$REMOTE              alias for desired remote to push to (defined in \$LOCAL_REPO)
+\$BRANCH              branch to work with
 EOF
 exit 0
 fi
@@ -24,8 +24,7 @@ fi
 destination_repo=$1
 package_name=$2
 additional_tests=$3
-remote=$4
-local_branch="master"
+local_branch=$4
 templates_dir="templates"
 destination_dir="$destination_repo/.github"
 commit_msg="MAINT: Updating GitHub templates"
@@ -44,7 +43,3 @@ if [ $package_name ]; then
 fi
 
 commit_changes "$destination_dir" "$commit_msg"
-
-if [ $remote ]; then
-  push_changes "$destination_dir" "$remote" "$local_branch"
-fi
