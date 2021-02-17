@@ -31,7 +31,8 @@ commit_msg="MAINT: Updating GitHub templates"
 
 # actions
 validate_repo "$destination_repo"
-prep_dest "$destination_repo" "$local_branch" "$destination_dir"
+prep_dest "$destination_repo" "$local_branch"
+mkdir -p $destination_dir
 cp -r ./$templates_dir/* $destination_dir
 if [ $package_name ]; then
   workflows_dir="$destination_dir/workflows"
