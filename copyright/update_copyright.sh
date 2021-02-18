@@ -27,6 +27,6 @@ commit_msg="MAINT: Updating copyright year"
 validate_repo "$destination_repo"
 prep_dest "$destination_repo" "$local_branch"
 cd $destination_repo
-q2lint --update-copyright-year
+q2lint --update-copyright-year -disable-install-requires-check
 cd -
 commit_changes "$destination_repo" "$commit_msg"
