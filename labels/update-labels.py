@@ -157,16 +157,8 @@ def colorize(text, color):
 if __name__ == '__main__':
     repo_name = sys.argv[1]
 
-    token = os.environ.get('GITHUB_LABEL_TOKEN')
-    if token is None:
-        user = os.environ.get("GITHUB_USER")
-        password = os.environ.get("GITHUB_PASS")
-        if user is None or password is None:
-            user, password = get_user_pass()
-
-        auth = {'login_or_token': user, 'password': password}
-    else:
-        auth = {'login_or_token': token}
+    token = os.environ['GITHUB_LABEL_TOKEN']
+    auth = {'login_or_token': token}
 
     for change in main(repo_name, auth):
         print_change(change)
