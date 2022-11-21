@@ -92,8 +92,6 @@ Sorted alphabetically by repo name.
   | The prototype Galaxy interface
 - [q2lint](https://github.com/qiime2/q2lint/issues)
   | An internal tool for ensuring header text and copyrights are present
-- [q2studio](https://github.com/qiime2/q2studio/issues)
-  | The prototype GUI interface
 - [q2templates](https://github.com/qiime2/q2templates/issues)
   | A base template for use in official QIIME 2 plugins
 - [q2view](https://github.com/qiime2/q2view/issues)

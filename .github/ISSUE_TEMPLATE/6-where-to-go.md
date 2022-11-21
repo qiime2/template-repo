@@ -119,9 +119,6 @@ Sorted alphabetically by repo name.
 - An internal tool for ensuring header text and copyrights are present
   https://github.com/qiime2/q2lint/issues
 
-- The prototype GUI interface
-  https://github.com/qiime2/q2studio/issues
-
 - A base template for use in official QIIME 2 plugins
   https://github.com/qiime2/q2templates/issues
 
